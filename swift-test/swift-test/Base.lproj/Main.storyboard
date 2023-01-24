@@ -16,17 +16,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8o-te-IKw">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8o-te-IKw">
                                 <rect key="frame" x="102" y="113" width="189" height="85"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="EF2-N8-Z1J"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HS5-1s-oeQ">
+                                <rect key="frame" x="38" y="247" width="316" height="189"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="p8o-te-IKw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="54" id="1nH-fD-gDe"/>
+                            <constraint firstItem="HS5-1s-oeQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5fp-Ll-yR1"/>
+                            <constraint firstItem="p8o-te-IKw" firstAttribute="centerX" secondItem="HS5-1s-oeQ" secondAttribute="centerX" id="FJD-Xd-JiU"/>
+                            <constraint firstItem="HS5-1s-oeQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="bqd-wD-pWA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HS5-1s-oeQ" secondAttribute="bottom" constant="382" id="kxz-pK-0LN"/>
+                            <constraint firstItem="p8o-te-IKw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="102" id="qWb-2A-li1"/>
+                            <constraint firstItem="HS5-1s-oeQ" firstAttribute="top" secondItem="p8o-te-IKw" secondAttribute="bottom" constant="49" id="sjH-9d-QKx"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="HS5-1s-oeQ" id="pQU-qP-GNp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
